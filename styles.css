@@ -1,0 +1,16 @@
+h1{
+	color: red;
+}
+
+#container{
+	width:400px;
+	height: 400px;
+	position: relative;
+	background-color: yellow;
+}
+#aminate{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: red;
+}
