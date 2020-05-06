@@ -2,7 +2,7 @@ body{
 	font-size:55px;
 	align-items: center;
 	color: red;
-	font-family:'Handlee', cursive;
+/* 	font-family:; */
 	background: radial-gradient(circle,yellow,white,pink);
 	/*background-size: 100% 100%;*/
 }
