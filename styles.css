@@ -1,16 +1,57 @@
-h1{
+body{
+	font-size:55px;
+	align-items: center;
 	color: red;
+	font-family:'Handlee', cursive;
+	background: radial-gradient(circle,yellow,white,pink);
+	/*background-size: 100% 100%;*/
+}
+.cube-face{
+	align-items: center;
+	position: relative;
+	transform-style: preserve-3d;
+	animation: up 5s infinite linear;
+	transition: width 10s linear;
+	opacity: 1;
 }
 
-#container{
-	width:400px;
-	height: 400px;
+.cube-face div{
+	/*width: 100px;
+	height: 100px;*/
+	align-items: center;
 	position: relative;
-	background-color: yellow;
 }
-#aminate{
-	width: 100px;
-	height: 100px;
+
+.cube-face-front div{
+	transition: translateX(100px);
+}
+
+.baloon{
+	align-items: center;
 	position: absolute;
-	background-color: red;
+	transform-style: preserve-3d;
+	animation: down 5s infinite linear;
+	transition: width 10s linear;
+	opacity: 0.7;
+}
+
+@keyframes up{
+	from{
+		transform: translate(0px, 500px);
+		-webkit-transform:translate(0px, 400);
+	}
+	to{
+		transform: translate(0px, 0px);
+		-webkit-transform:translate(0px, -100px);
+	}
+}
+@keyframes down{
+	from{
+		transform: translate(0px, 500px);
+		-webkit-transform:translate(0px, 400px);
+	}
+	to{
+		transform: translate(0px, 0px);
+		-webkit-transform:translate(0px, -400px);
+	}
 }
